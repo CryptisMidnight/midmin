@@ -16,7 +16,7 @@ set -g current_bg NONE
 set hard_space \u2060
 set icon_root \uf484
 set icon_home \uf7db
-set icon_arrow \uf739\u3000
+set icon_arrow \uf739
 set prompt_text \uf739
 
 set -q scm_prompt_blacklist; or set scm_prompt_blacklist
