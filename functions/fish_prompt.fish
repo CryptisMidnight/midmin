@@ -21,7 +21,7 @@ set prompt_text \uf739
 
 set -q scm_prompt_blacklist; or set scm_prompt_blacklist
 # style suggestions \ue0b0 \ue0c8 \ue0cc \ue0c6 \ue0c4 \ue0c0
-set segment_separator \ue0b0
+set segment_separator \u0020
 set dir_sep \u0020\ue0b1\u00a0
 set segment_splitter \ue0b1
 set right_segment_separator \ue0b0
@@ -236,7 +236,7 @@ end
 
 function prompt_arrow
   set_color $arrw_tx_clr
-  echo -n $icon_arrow
+  echo -n $icon_arrow $segment_separator
 end
 
 # ===========================
@@ -259,7 +259,6 @@ function fish_prompt
     end
   end
   prompt_status
-  #prompt_finish\
   prompt_arrow
   #prompt_finish
 end
